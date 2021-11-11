@@ -1,0 +1,169 @@
+
+<div class="row align-items-center page-header">
+    <div class="col-md-6">
+        <app-breadcrumb></app-breadcrumb>
+    </div>
+    <div class="col-md-6 text-right">
+        <button type="button" class="btn btn-primary m-r-5"><i class="feather icon-plus"></i> Filtedddr</button>
+        <button type="button" class="btn btn-outline-primary"><i class="feather icon-rotate-cw"></i> Reload</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3 col-md-6">
+        <app-card [hidHeader]="true" blockClass="p-30">
+            <div class="d-flex pt-3 pb-2 no-block">
+                <div class="align-self-center mr-5 ml-4"><img src="assets/images/icon/inventory.png" alt="" title="" width="50"></div>
+                <div class="align-slef-center mr-auto">
+                    <h3 class="m-b-2 text-uppercase font-30 font-medium lp-5 text-danger">10432</h3>
+                    <h6 class="text-muted m-b-0">Estudiantes apoyados 2020-2</h6>
+                </div>
+            </div>
+        </app-card>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <app-card [hidHeader]="true" blockClass="p-30">
+            <div class="d-flex pt-3 pb-2 no-block">
+                <div class="align-self-center mr-5 ml-4"><img src="assets/images/icon/money.png" alt="" title="" width="50"></div>
+                <div class="align-slef-center mr-auto">
+                    <h4 class="m-b-2 text-uppercase font-30 font-medium lp-5 text-primary">$8.215.914.003 </h4>
+                    <h6 class="text-muted m-b-0 ">Total dinero gastado en apoyos 2020-2</h6>
+                </div>
+            </div>
+        </app-card>
+    </div>
+
+
+    <div class="col-lg-3 col-md-6">
+        <app-card [hidHeader]="true" blockClass="p-30">
+            <div class="d-flex pt-3 pb-2 no-block">
+                <div class="align-self-center mr-5 ml-4"><img src="assets/images/icon/inventory.png" alt="" title="" width="50"></div>
+                <div class="align-slef-center mr-auto">
+                    <h3 class="m-b-2 text-uppercase font-30 font-medium lp-5 text-warning">9844</h3>
+                    <h6 class="text-muted m-b-0">Estudiantes apoyados 2021-1</h6>
+                </div>
+            </div>
+        </app-card>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <app-card [hidHeader]="true" blockClass="p-30">
+            <div class="d-flex pt-3 pb-2 no-block">
+                <div class="align-self-center mr-3 ml-2"><img src="assets/images/icon/money.png" alt="" title="" width="40"></div>
+                <div class="align-slef-center mr-auto">
+                    <h3 class="m-b-2 text-uppercase font-30 font-medium lp-5 text-warning"> $9.288.028.578</h3>
+                    <h6 class="text-muted m-b-0">Total dinero gastado en apoyos 2021-1</h6>
+                </div>
+            </div>
+        </app-card>
+    </div>
+</div>
+
+
+<!-- <div class="row">
+    <div class="col-lg-8 col-md-12">
+        <app-card [hidHeader]="true" cardClass="panel-main o-income panel-refresh" blockClass="panel-wrapper">
+            <div class="d-flex m-b-10 no-block">
+                <h5 class="card-title m-b-0 align-self-center">Total apoyos brindados por bienestar</h5>
+                <div class="ml-auto text-muted-blue">
+                    <a href="javascript:" class="pull-left text-muted-blue inline-block refresh mr-15"> <i class="fas fa-sync"></i> Update </a>
+                </div>
+            </div>
+            <app-apex-chart chartID="memory-use-dah-server" [chartConfig]="this.memoryUseDashServer"></app-apex-chart>
+        </app-card>
+    </div>
+
+</div> -->
+
+<div class="row">
+    <div class="col-sm-12">
+        <app-card [hidHeader]="true" cardClass="o-income">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <div class="d-flex panel-main m-b-10 no-block  panel-refresh">
+                        <h5 class="card-title m-b-0 align-self-center">Total dinero invertido en apoyos</h5>
+
+                    </div>
+                    <app-apex-chart chartID="memory-use-dah-server" [chartConfig]="this.memoryUseDashServer"></app-apex-chart>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="panel-main pl-3 m-b-10 no-block  panel-refresh bordered-left-light bordered-css">
+                        <h5 class="card-title m-b-0 align-self-center">PAES</h5>
+                        <div class="block m-t-10 m-b-40">
+                            <div class="cpu-div-left"> <span class="block f-20 text-danger">$187,292,719</span> Dinero invertido </div>
+                            <div class="cpu-div-right pl-4"> <span class="block f-20 text-primary">517</span> Estudiantes beneficiados </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr>
+                        <h5 class="card-title m-t-30 m-b-0 align-self-center">PEAMA</h5>
+                        <div class="block m-t-10 m-b-40">
+                            <div class="cpu-div-left"> <span class="block f-20 text-danger">$218,249,148</span> Dinero invertido </div>
+                            <div class="cpu-div-right pl-4"> <span class="block f-20 text-primary">505</span> Estudiantes beneficiados </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr>
+                        <h5 class="card-title m-t-30  m-b-0 align-self-center">REGULAR DE PREGRADO</h5>
+                        <div class="block m-t-10 m-b-30">
+                            <div class="cpu-div-left"> <span class="block f-20 text-danger">$436,965,531</span> Dinero invertido </div>
+                            <div class="cpu-div-right pl-4"> <span class="block f-20 text-primary">2066</span> Estudiantes beneficiados </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <hr>
+                        <h5 class="card-title m-t-30  m-b-0 align-self-center text-uppercase " title="Regular Posgrado e Intercambio Internacional">Otros</h5>
+
+                        <div class="block m-t-10 m-b-30">
+                            <div class="cpu-div-left"> <span class="block f-20 text-danger">$12,205,000</span> Dinero invertido </div>
+                            <div class="cpu-div-right pl-4"> <span class="block f-20 text-primary">65</span> Estudiantes beneficiados </div>
+                            <div class="clearfix"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </app-card>
+    </div>
+</div>
+<div class="col-lg-13" id="chart">
+    <app-card cardTitle="Apoyos entregados por facultades" [options]="false">
+        <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [dataLabels]="chartOptions.dataLabels" [plotOptions]="chartOptions.plotOptions" [yaxis]="chartOptions.yaxis" [xaxis]="chartOptions.xaxis" [legend]="chartOptions.legend" [colors]="chartOptions.colors"></apx-chart>
+    </app-card>
+</div>
+
+<div class="row">
+    <div class="col-lg-8 col-md-6">
+
+        <figure class="highcharts-figure">
+            <div id="ch"></div>
+
+        </figure>
+
+    </div>
+    <!-- <div class="col-md-4">
+        <app-card cardTitle="Edades de estudiantes" [options]="false">
+            <app-apex-chart chartID="pie-chart-1-cac" [chartConfig]="this.chartDB.pie1CAC"></app-apex-chart>
+        </app-card>
+    </div> -->
+    <div class="col-lg-4 col-md-6">
+        <app-card [hidHeader]="true">
+            <div class="d-flex m-b-6 no-block">
+                <h5 class="card-title m-b-0 align-self-center">Estudiantes beneficiarios por pbm</h5>
+                <div class="ml-auto text-light-blue">
+                </div>
+            </div>
+            <ul class="list-inline m-b-30 text-uppercase lp-5 font-medium font-12">
+                <li><i class="fa fa-square m-r-5 " id="ND"></i> ND </li>
+                <li><i class="fa fa-square m-r-5 " id="ND2"></i> 0-10 </li>
+                <li><i class="fa fa-square m-r-5 " id="ND3"></i> 11-20</li>
+                <li><i class="fa fa-square m-r-5 " id="ND4"></i> 21-30</li>
+                <li><i class="fa fa-square m-r-5 " id="ND5"></i> 31-40</li>
+                <li><i class="fa fa-square m-r-5 " id="ND6"></i> 41-50</li>
+                <li><i class="fa fa-square m-r-5 " id="ND7"></i> 51-60</li>
+                <li><i class="fa fa-square m-r-5 " id="ND8"></i> 61-70</li>
+                <li><i class="fa fa-square m-r-5 " id="ND9"></i> 71-80</li>
+                <li><i class="fa fa-square m-r-5 " id="ND10"></i> 81-90</li>
+                <li><i class="fa fa-square m-r-5 " id="ND11"></i> 91-100</li>
+            </ul>
+            <app-apex-chart chartID="visitor-gender-dash-analytics" [chartConfig]="this.visitorGenderDashAnalytics"></app-apex-chart>
+        </app-card>
+    </div>
+
+</div>
